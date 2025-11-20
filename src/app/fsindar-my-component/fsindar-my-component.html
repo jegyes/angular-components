@@ -1,7 +1,18 @@
-<h1>Planets have no human</h1>
-    <ul>
-        <li>Hoth — An icy, uninhabitable world with no intelligent life; only creatures like wampas and tauntauns.</li>
-        <li>Dagobah — Swamp planet filled with creatures but no known civilization; Yoda lived there in exile.</li>
-        <li>Endor — Forest moon inhabited by Ewoks; no human civilization.</li>
-    </ul>
+<mat-card appearance="outlined">
+	<mat-card-header>
+		<mat-card-title>Planets have no human</mat-card-title>
+	</mat-card-header>
 
+	<mat-card-content>
+		<mat-list>
+			@for (p of planetsToDisplay; track p) {
+				<mat-list-item>
+					<span matListItemTitle>{{ p.name }}</span>
+					<span matListItemLine>
+						{{ p.description }}
+					</span>
+				</mat-list-item>
+			}
+		</mat-list>
+	</mat-card-content>
+</mat-card>
