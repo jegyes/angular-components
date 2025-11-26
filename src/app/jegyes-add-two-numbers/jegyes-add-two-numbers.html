@@ -1,7 +1,64 @@
-<h1>Add Two Numbers</h1>
-<input type="number" [value]="numberOne()" (input)="updateNumberOne($event.target.valueAsNumber)" />
-&nbsp;+&nbsp;
-<input type="number" [value]="numberTwo()" (input)="numberTwo.set($event.target.valueAsNumber)" />
-&nbsp;
-<button (click)="addNumbers()">=</button>
-&nbsp; {{ answer() }}
+<!-- <mat-card appearance="outlined">
+	<mat-card-header>
+		<mat-card-title>Add Two Numbers</mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
+		<br />
+		<mat-form-field>
+			<mat-label>Number One</mat-label>
+			<input
+				matInput
+				type="number"
+				[value]="numberOne()"
+				(input)="updateNumberOne($event.target.valueAsNumber)"
+			/>
+		</mat-form-field>
+		&nbsp;+&nbsp;
+		<mat-form-field>
+			<mat-label>Number Two</mat-label>
+			<input
+				matInput
+				type="number"
+				[value]="numberTwo()"
+				(input)="numberTwo.set($event.target.valueAsNumber)"
+			/>
+		</mat-form-field>
+		&nbsp;
+		<button matMiniFab (click)="addNumbers()">=</button>
+		&nbsp; {{ answer() }}
+	</mat-card-content>
+</mat-card> -->
+
+<mat-card appearance="outlined" class="custom-card">
+	<mat-card-header>
+		<mat-card-title>Add Two Numbers</mat-card-title>
+	</mat-card-header>
+	<mat-card-content>
+		<br />
+		<mat-form-field>
+			<mat-label>Number One</mat-label>
+			<input
+				class="matInput"
+				matInput
+				type="number"
+				[value]="numberOne()"
+				(input)="updateNumberOne($event.target.valueAsNumber)"
+			/>
+		</mat-form-field>
+		&nbsp;+&nbsp;
+		<mat-form-field>
+			<mat-label>Number Two</mat-label>
+			<input
+				class="matInput"
+				matInput
+				type="number"
+				[value]="numberTwo()"
+				(input)="numberTwo.set($event.target.valueAsNumber)"
+			/>
+		</mat-form-field>
+		&nbsp;
+		<button matMiniFab (click)="addNumbers()" class="pita">=</button>
+		&nbsp; {{ answer() }}
+		<!-- your content -->
+	</mat-card-content>
+</mat-card>

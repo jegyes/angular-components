@@ -1,0 +1,21 @@
+.custom-card {
+	/* border: 2px solid #a1b8d1 !important; /* custom blue border */
+	background-color: #e9f3ff !important;
+	border-radius: 12px;
+}
+
+.custom-card .mat-mdc-card-header {
+	background: white;
+	color: navy;
+	padding: 12px;
+	border-radius: 12px;
+}
+
+/* .custom-card .matInput {
+	border: navy;
+	background: white;
+}
+
+.custom-card .pita {
+	color: blue;
+} */
